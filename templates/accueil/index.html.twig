@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccueilController!{% endblock %}
+
+{% block body %}
+Bienvenu :
+{{ dump (app.user) }}
+Vous pouvez obtenir l'user qui s'et logué, ainsi que d'autres infos, en utilisant la variable 'app':
+<a href = "https://symfony.com/doc/4.0/templating/app_variable.html">https://symfony.com/doc/4.0/templating/app_variable.html</a>
+<br>
+<a href = "{{ path ('logout') }}">Logout</a>
+{% endblock %}
